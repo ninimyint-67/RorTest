@@ -1,0 +1,25 @@
+<div class="jumbotron">
+  <h1 class="display-4"><%= @friend.first_name %></h1>
+  <p class="lead"> 
+  <strong>First name:</strong>
+  <%= @friend.first_name %>
+
+  <strong>Last name:</strong>
+  <%= @friend.last_name %>
+
+
+  <strong>Email:</strong>
+  <%= @friend.email %>
+
+  <strong>Phone:</strong>
+  <%= @friend.phone %>=
+
+<strong>Twitter:</strong>
+  <%= @friend.twitter %>
+
+  <hr class="my-4">
+</div>
+
+
+<%= link_to 'Edit', edit_friend_path(@friend), class:"btn btn-danger" %> |
+<%= link_to 'Back', friends_path, class:"btn btn-secondary" %>
